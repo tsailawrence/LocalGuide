@@ -1,0 +1,22 @@
+{
+  "name": "localguide",
+  "version": "1.0.0",
+  "description": "## Installation     //Inside LocalGuide folder     npm install     cd frontend     npm install",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "cd frontend && yarn start",
+    "server": "cd backend && python3 -u server.py"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tsailawrence/LocalGuide.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/tsailawrence/LocalGuide/issues"
+  },
+  "homepage": "https://github.com/tsailawrence/LocalGuide#readme"
+}
