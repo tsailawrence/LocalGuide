@@ -35,19 +35,27 @@ function MainPage() {
 
   const onPredict = async () => {
     const {
-      data: { content, message, result },
+      data: { content, message, res },
       // result might be string, need to be converted to array
     } = await axios.get("/predict");
+
+    console.log(res)
+    let restaurants = []
+    res.forEach(r_id => 
+      restaurants.push(r_id[0])
+    )
 
     switch (message) {
       case "success":
         setStatus({ type: "success", msg: content });
-        setResult();
+        setResult([...restaurants]);
         break;
       case "error":
         setStatus({ type: "error", msg: content });
         break;
     }
+
+    console.log(result)
   };
 
   return (
